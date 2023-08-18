@@ -24,7 +24,7 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <parent>
         <groupId>org.kie.kogito.examples</groupId>
-        <artifactId>kogito-examples</artifactId>
+        <artifactId>serverless-workflow-examples</artifactId>
         <version>1.42.0.Final</version>
     </parent>
 
