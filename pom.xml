@@ -380,6 +380,24 @@
           <artifactId>openshift-maven-plugin</artifactId>
           <version>${version.org.eclipse.jkube}</version>
         </plugin>
+        <plugin>
+          <groupId>com.mycila</groupId>
+          <artifactId>license-maven-plugin</artifactId>
+          <version>4.2</version>
+          <configuration>
+            <licenseSets>
+              <licenseSet>
+                <header>licensesheader.txt</header>
+                <excludes>
+                  <exclude>**/README</exclude>
+                  <exclude>kogito-quarkus-examples/**</exclude>
+                  <exclude>kogito-springboot-examples/**</exclude>
+                  <exclude>serverless-workflow-examples/**</exclude>
+                </excludes>
+              </licenseSet>
+            </licenseSets>
+          </configuration>
+        </plugin>
       </plugins>
     </pluginManagement>
     <plugins>
@@ -405,6 +423,24 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-failsafe-plugin</artifactId>
+      </plugin>
+      <plugin>
+        <groupId>com.mycila</groupId>
+        <artifactId>license-maven-plugin</artifactId>
+        <version>4.2</version>
+        <configuration>
+          <licenseSets>
+            <licenseSet>
+              <header>licensesheader.txt</header>
+              <excludes>
+                <exclude>**/README</exclude>
+                <exclude>**kogito-quarkus-examples/**</exclude>
+                <exclude>kogito-springboot-examples/**</exclude>
+                <exclude>serverless-workflow-examples/**</exclude>
+              </excludes>
+            </licenseSet>
+          </licenseSets>
+        </configuration>
       </plugin>
     </plugins>
   </build>
