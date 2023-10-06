@@ -1,0 +1,1 @@
+org.kie.kogito.examples:kogito-springboot-examples:pom:1.44.1.Final

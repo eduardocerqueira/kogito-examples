@@ -1,0 +1,50 @@
+org.kie.kogito.examples:process-performance-client:jar:1.44.1.Final
++- io.smallrye.reactive:smallrye-mutiny-vertx-web-client:jar:2.30.1:compile
+|  +- io.vertx:vertx-web-client:jar:4.3.7:compile
+|  |  +- io.vertx:vertx-uri-template:jar:4.3.7:compile
+|  |  +- io.vertx:vertx-web-common:jar:4.3.7:compile
+|  |  +- io.vertx:vertx-auth-common:jar:4.3.7:compile
+|  |  \- io.vertx:vertx-core:jar:4.3.7:compile
+|  |     +- io.netty:netty-common:jar:4.1.94.Final:compile
+|  |     +- io.netty:netty-buffer:jar:4.1.94.Final:compile
+|  |     +- io.netty:netty-transport:jar:4.1.94.Final:compile
+|  |     +- io.netty:netty-handler:jar:4.1.94.Final:compile
+|  |     |  +- io.netty:netty-transport-native-unix-common:jar:4.1.94.Final:compile
+|  |     |  \- io.netty:netty-codec:jar:4.1.94.Final:compile
+|  |     +- io.netty:netty-handler-proxy:jar:4.1.94.Final:compile
+|  |     |  \- io.netty:netty-codec-socks:jar:4.1.94.Final:compile
+|  |     +- io.netty:netty-codec-http:jar:4.1.94.Final:compile
+|  |     +- io.netty:netty-codec-http2:jar:4.1.94.Final:compile
+|  |     +- io.netty:netty-resolver:jar:4.1.94.Final:compile
+|  |     \- io.netty:netty-resolver-dns:jar:4.1.94.Final:compile
+|  |        \- io.netty:netty-codec-dns:jar:4.1.94.Final:compile
+|  +- io.smallrye.reactive:smallrye-mutiny-vertx-core:jar:2.30.1:compile
+|  |  +- io.smallrye.reactive:mutiny:jar:1.9.0:compile
+|  |  |  +- org.reactivestreams:reactive-streams:jar:1.0.3:compile
+|  |  |  \- io.smallrye.common:smallrye-common-annotation:jar:1.13.2:compile
+|  |  +- io.smallrye.reactive:smallrye-mutiny-vertx-runtime:jar:2.30.1:compile
+|  |  \- io.smallrye.reactive:vertx-mutiny-generator:jar:2.30.1:compile
+|  |     \- io.vertx:vertx-codegen:jar:4.3.7:compile
+|  +- io.smallrye.reactive:smallrye-mutiny-vertx-auth-common:jar:2.30.1:compile
+|  +- io.smallrye.reactive:smallrye-mutiny-vertx-web-common:jar:2.30.1:compile
+|  \- io.smallrye.reactive:smallrye-mutiny-vertx-uri-template:jar:2.30.1:compile
++- org.apache.kafka:kafka-clients:jar:3.4.0:compile
+|  +- com.github.luben:zstd-jni:jar:1.5.2-1:runtime
+|  +- org.lz4:lz4-java:jar:1.8.0:runtime
+|  +- org.xerial.snappy:snappy-java:jar:1.1.10.1:runtime
+|  \- org.slf4j:slf4j-api:jar:1.7.36:compile
++- org.slf4j:slf4j-simple:jar:1.7.36:compile
++- com.fasterxml.jackson.core:jackson-databind:jar:2.14.2:compile
+|  +- com.fasterxml.jackson.core:jackson-annotations:jar:2.14.2:compile
+|  \- com.fasterxml.jackson.core:jackson-core:jar:2.14.2:compile
++- org.kie.kogito:kogito-events-api:jar:1.44.1.Final:compile
+|  +- org.kie.kogito:kogito-api:jar:1.44.1.Final:compile
+|  |  +- org.kie:kie-api:jar:8.44.0.Final:compile
+|  |  \- io.cloudevents:cloudevents-api:jar:2.3.0:compile
+|  \- io.cloudevents:cloudevents-core:jar:2.3.0:compile
+\- org.kie.kogito:kogito-services:jar:1.44.1.Final:compile
+   +- org.kie.kogito:kogito-events-core:jar:1.44.1.Final:compile
+   |  +- io.cloudevents:cloudevents-json-jackson:jar:2.3.0:compile
+   |  +- com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.14.2:compile
+   |  \- org.kie.kogito:kogito-jackson-utils:jar:1.44.1.Final:compile
+   \- org.kie.kogito:kogito-timer:jar:1.44.1.Final:compile

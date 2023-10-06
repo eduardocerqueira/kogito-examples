@@ -1,0 +1,1 @@
+org.kie.kogito.examples:onboarding-example:pom:1.44.1.Final

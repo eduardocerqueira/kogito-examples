@@ -1,0 +1,203 @@
+org.kie.kogito.examples:dmn-tracing-springboot:jar:1.44.1.Final
++- org.springframework.boot:spring-boot-starter-actuator:jar:2.6.6:compile
+|  +- org.springframework.boot:spring-boot-starter:jar:2.6.6:compile
+|  |  +- org.springframework.boot:spring-boot:jar:2.6.6:compile
+|  |  +- org.springframework.boot:spring-boot-autoconfigure:jar:2.6.6:compile
+|  |  +- org.springframework.boot:spring-boot-starter-logging:jar:2.6.6:compile
+|  |  |  +- ch.qos.logback:logback-classic:jar:1.2.9:compile
+|  |  |  |  \- ch.qos.logback:logback-core:jar:1.2.9:compile
+|  |  |  +- org.apache.logging.log4j:log4j-to-slf4j:jar:2.17.2:compile
+|  |  |  |  \- org.apache.logging.log4j:log4j-api:jar:2.17.2:compile
+|  |  |  \- org.slf4j:jul-to-slf4j:jar:1.7.36:compile
+|  |  +- jakarta.annotation:jakarta.annotation-api:jar:1.3.5:compile
+|  |  \- org.yaml:snakeyaml:jar:2.0:compile
+|  +- org.springframework.boot:spring-boot-actuator-autoconfigure:jar:2.6.6:compile
+|  |  +- org.springframework.boot:spring-boot-actuator:jar:2.6.6:compile
+|  |  +- com.fasterxml.jackson.core:jackson-databind:jar:2.14.2:compile
+|  |  |  \- com.fasterxml.jackson.core:jackson-core:jar:2.14.2:compile
+|  |  \- com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.14.2:compile
+|  \- io.micrometer:micrometer-core:jar:1.10.2:compile
+|     +- io.micrometer:micrometer-commons:jar:1.10.2:compile
+|     +- io.micrometer:micrometer-observation:jar:1.10.2:compile
+|     +- org.hdrhistogram:HdrHistogram:jar:2.1.12:runtime
+|     \- org.latencyutils:LatencyUtils:jar:2.0.3:runtime
++- org.kie.kogito:kogito-decisions-spring-boot-starter:jar:1.44.1.Final:compile
+|  +- org.kie.kogito:kogito-dmn:jar:1.44.1.Final:compile
+|  |  +- org.kie:kie-dmn-core:jar:8.44.0.Final:compile
+|  |  |  +- org.kie:kie-dmn-api:jar:8.44.0.Final:compile
+|  |  |  |  \- org.kie:efesto-common-api:jar:8.44.0.Final:compile
+|  |  |  +- org.kie:kie-dmn-model:jar:8.44.0.Final:compile
+|  |  |  +- org.kie:kie-dmn-backend:jar:8.44.0.Final:compile
+|  |  |  |  +- org.kie:kie-util-xml:jar:8.44.0.Final:compile
+|  |  |  |  \- com.thoughtworks.xstream:xstream:jar:1.4.20:compile
+|  |  |  |     \- io.github.x-stream:mxparser:jar:1.2.2:compile
+|  |  |  |        \- xmlpull:xmlpull:jar:1.1.3.1:compile
+|  |  |  +- org.kie:kie-dmn-feel:jar:8.44.0.Final:compile
+|  |  |  |  \- ch.obermuhlner:big-math:jar:2.0.1:compile
+|  |  |  +- org.kie:kie-internal:jar:8.44.0.Final:compile
+|  |  |  +- org.kie:kie-memory-compiler:jar:8.44.0.Final:compile
+|  |  |  |  \- org.drools:drools-util:jar:8.44.0.Final:compile
+|  |  |  +- org.drools:drools-wiring-api:jar:8.44.0.Final:compile
+|  |  |  +- org.drools:drools-core:jar:8.44.0.Final:compile
+|  |  |  |  +- org.drools:drools-base:jar:8.44.0.Final:compile
+|  |  |  |  +- org.drools:drools-wiring-static:jar:8.44.0.Final:compile
+|  |  |  |  \- org.drools:drools-io:jar:8.44.0.Final:compile
+|  |  |  +- org.drools:drools-compiler:jar:8.44.0.Final:compile
+|  |  |  |  +- org.drools:drools-drl-parser:jar:8.44.0.Final:compile
+|  |  |  |  +- org.drools:drools-drl-extensions:jar:8.44.0.Final:compile
+|  |  |  |  +- org.drools:drools-drl-ast:jar:8.44.0.Final:compile
+|  |  |  |  +- org.drools:drools-kiesession:jar:8.44.0.Final:compile
+|  |  |  |  +- org.drools:drools-ecj:jar:8.44.0.Final:compile
+|  |  |  |  |  \- org.eclipse.jdt:ecj:jar:3.33.0:compile
+|  |  |  |  +- org.kie:kie-util-maven-support:jar:8.44.0.Final:compile
+|  |  |  |  \- org.antlr:antlr-runtime:jar:3.5.2:compile
+|  |  |  +- org.drools:drools-canonical-model:jar:8.44.0.Final:compile
+|  |  |  +- org.drools:drools-model-compiler:jar:8.44.0.Final:compile
+|  |  |  +- com.github.javaparser:javaparser-core:jar:3.24.2:compile
+|  |  |  +- org.drools:drools-mvel-parser:jar:8.44.0.Final:compile
+|  |  |  +- org.drools:drools-alphanetwork-compiler:jar:8.44.0.Final:compile
+|  |  |  +- org.kie:efesto-compilation-manager-core:jar:8.44.0.Final:compile
+|  |  |  |  +- org.kie:efesto-compilation-manager-api:jar:8.44.0.Final:compile
+|  |  |  |  \- org.kie:efesto-common-core:jar:8.44.0.Final:compile
+|  |  |  +- org.kie:efesto-runtime-manager-core:jar:8.44.0.Final:compile
+|  |  |  |  \- org.kie:efesto-runtime-manager-api:jar:8.44.0.Final:compile
+|  |  |  +- org.kie:efesto-common-utils:jar:8.44.0.Final:compile
+|  |  |  +- org.antlr:antlr4-runtime:jar:4.10.1:compile
+|  |  |  \- org.jpmml:pmml-model:jar:1.5.1:compile
+|  |  |     \- org.jpmml:pmml-agent:jar:1.5.1:compile
+|  |  +- org.kie:kie-dmn-validation:jar:8.44.0.Final:compile
+|  |  |  \- org.drools:drools-commands:jar:8.44.0.Final:compile
+|  |  \- org.kie.kogito:kogito-drools:jar:1.44.1.Final:compile
+|  |     +- org.drools:drools-ruleunits-api:jar:8.44.0.Final:compile
+|  |     +- org.drools:drools-ruleunits-impl:jar:8.44.0.Final:compile
+|  |     \- org.drools:drools-model-codegen:jar:8.44.0.Final:compile
+|  |        +- org.drools:drools-codegen-common:jar:8.44.0.Final:compile
+|  |        \- org.drools:drools-mvel-compiler:jar:8.44.0.Final:compile
+|  +- org.springframework.boot:spring-boot-starter-web:jar:2.6.6:compile
+|  |  +- org.springframework.boot:spring-boot-starter-json:jar:2.6.6:compile
+|  |  |  +- com.fasterxml.jackson.datatype:jackson-datatype-jdk8:jar:2.14.2:compile
+|  |  |  \- com.fasterxml.jackson.module:jackson-module-parameter-names:jar:2.14.2:compile
+|  |  +- org.springframework.boot:spring-boot-starter-tomcat:jar:2.6.6:compile
+|  |  |  +- org.apache.tomcat.embed:tomcat-embed-core:jar:9.0.60:compile
+|  |  |  +- org.apache.tomcat.embed:tomcat-embed-el:jar:9.0.60:compile
+|  |  |  \- org.apache.tomcat.embed:tomcat-embed-websocket:jar:9.0.60:compile
+|  |  +- org.springframework:spring-web:jar:5.3.18:compile
+|  |  |  \- org.springframework:spring-beans:jar:5.3.18:compile
+|  |  \- org.springframework:spring-webmvc:jar:5.3.18:compile
+|  |     +- org.springframework:spring-aop:jar:5.3.18:compile
+|  |     \- org.springframework:spring-expression:jar:5.3.18:compile
+|  +- org.kie.kogito:kogito-api:jar:1.44.1.Final:compile
+|  |  +- org.slf4j:slf4j-api:jar:1.7.36:compile
+|  |  +- org.kie:kie-api:jar:8.44.0.Final:compile
+|  |  +- com.fasterxml.jackson.core:jackson-annotations:jar:2.14.2:compile
+|  |  \- io.cloudevents:cloudevents-api:jar:2.3.0:compile
+|  +- javax.xml.bind:jaxb-api:jar:2.3.1:compile
+|  |  \- javax.activation:javax.activation-api:jar:1.2.0:compile
+|  +- com.sun.activation:javax.activation:jar:1.2.0:compile
+|  +- io.swagger.core.v3:swagger-annotations:jar:2.2.7:compile
+|  \- org.springdoc:springdoc-openapi-ui:jar:1.6.14:compile
+|     +- org.springdoc:springdoc-openapi-webmvc-core:jar:1.6.14:compile
+|     |  \- org.springdoc:springdoc-openapi-common:jar:1.6.14:compile
+|     |     \- io.swagger.core.v3:swagger-core:jar:2.2.7:compile
+|     |        +- com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:jar:2.14.2:compile
+|     |        +- io.swagger.core.v3:swagger-models:jar:2.2.7:compile
+|     |        \- jakarta.validation:jakarta.validation-api:jar:2.0.2:compile
+|     +- org.webjars:swagger-ui:jar:4.15.5:compile
+|     +- org.webjars:webjars-locator-core:jar:0.48:compile
+|     \- io.github.classgraph:classgraph:jar:4.8.149:compile
++- org.kie.kogito:kogito-addons-springboot-tracing-decision:jar:1.44.1.Final:compile
+|  +- org.kie.kogito:kogito-addons-tracing-decision-common:jar:1.44.1.Final:compile
+|  |  +- org.kie.kogito:kogito-events-core:jar:1.44.1.Final:compile
+|  |  |  +- org.kie.kogito:kogito-events-api:jar:1.44.1.Final:compile
+|  |  |  |  \- io.cloudevents:cloudevents-core:jar:2.3.0:compile
+|  |  |  +- io.cloudevents:cloudevents-json-jackson:jar:2.3.0:compile
+|  |  |  \- org.kie.kogito:kogito-jackson-utils:jar:1.44.1.Final:compile
+|  |  +- org.kie.kogito:kogito-addons-tracing-api:jar:1.44.1.Final:compile
+|  |  |  \- org.kie.kogito:kogito-addons-tracing-typedvalue-api:jar:1.44.1.Final:compile
+|  |  \- org.kie.kogito:kogito-addons-explainability:jar:1.44.1.Final:compile
+|  +- org.kie.kogito:kogito-addons-springboot-explainability:jar:1.44.1.Final:compile
+|  +- org.springframework.kafka:spring-kafka:jar:2.8.4:compile
+|  |  +- org.springframework:spring-context:jar:5.3.18:compile
+|  |  +- org.springframework:spring-messaging:jar:5.3.18:compile
+|  |  +- org.springframework:spring-tx:jar:5.3.18:compile
+|  |  +- org.springframework.retry:spring-retry:jar:1.3.2:compile
+|  |  \- com.google.code.findbugs:jsr305:jar:3.0.2:runtime
+|  \- javax.annotation:javax.annotation-api:jar:1.3.2:compile
++- org.kie.kogito:kogito-addons-springboot-monitoring-prometheus:jar:1.44.1.Final:compile
+|  +- org.kie.kogito:kogito-addons-monitoring-prometheus:jar:1.44.1.Final:compile
+|  |  +- org.kie.kogito:kogito-addons-monitoring-core:jar:1.44.1.Final:compile
+|  |  |  \- org.kie.kogito:grafana-api:jar:1.44.1.Final:compile
+|  |  \- io.micrometer:micrometer-registry-prometheus:jar:1.10.2:compile
+|  |     \- io.prometheus:simpleclient_common:jar:0.12.0:compile
+|  |        \- io.prometheus:simpleclient:jar:0.12.0:compile
+|  |           +- io.prometheus:simpleclient_tracer_otel:jar:0.12.0:compile
+|  |           |  \- io.prometheus:simpleclient_tracer_common:jar:0.12.0:compile
+|  |           \- io.prometheus:simpleclient_tracer_otel_agent:jar:0.12.0:compile
+|  \- org.kie.kogito:kogito-addons-springboot-monitoring-core:jar:1.44.1.Final:compile
++- org.springframework.boot:spring-boot-starter-test:jar:2.6.6:test
+|  +- org.springframework.boot:spring-boot-test:jar:2.6.6:test
+|  +- org.springframework.boot:spring-boot-test-autoconfigure:jar:2.6.6:test
+|  +- com.jayway.jsonpath:json-path:jar:2.8.0:test
+|  |  \- net.minidev:json-smart:jar:2.4.10:test
+|  |     \- net.minidev:accessors-smart:jar:2.4.9:test
+|  |        \- org.ow2.asm:asm:jar:9.3:test
+|  +- jakarta.xml.bind:jakarta.xml.bind-api:jar:2.3.3:compile
+|  |  \- jakarta.activation:jakarta.activation-api:jar:1.2.2:compile
+|  +- org.assertj:assertj-core:jar:3.22.0:test
+|  +- org.hamcrest:hamcrest:jar:2.2:test
+|  +- org.junit.jupiter:junit-jupiter:jar:5.9.2:test
+|  |  +- org.junit.jupiter:junit-jupiter-api:jar:5.9.2:test
+|  |  |  +- org.opentest4j:opentest4j:jar:1.2.0:test
+|  |  |  +- org.junit.platform:junit-platform-commons:jar:1.9.2:test
+|  |  |  \- org.apiguardian:apiguardian-api:jar:1.1.2:test
+|  |  +- org.junit.jupiter:junit-jupiter-params:jar:5.9.2:test
+|  |  \- org.junit.jupiter:junit-jupiter-engine:jar:5.9.2:test
+|  |     \- org.junit.platform:junit-platform-engine:jar:1.9.2:test
+|  +- org.mockito:mockito-core:jar:4.11.0:test
+|  |  +- net.bytebuddy:byte-buddy:jar:1.12.18:test
+|  |  +- net.bytebuddy:byte-buddy-agent:jar:1.11.22:test
+|  |  \- org.objenesis:objenesis:jar:3.3:test
+|  +- org.mockito:mockito-junit-jupiter:jar:4.11.0:test
+|  +- org.skyscreamer:jsonassert:jar:1.5.0:test
+|  |  \- com.vaadin.external.google:android-json:jar:0.0.20131108.vaadin1:test
+|  +- org.springframework:spring-core:jar:5.3.18:compile
+|  |  \- org.springframework:spring-jcl:jar:5.3.18:compile
+|  +- org.springframework:spring-test:jar:5.3.18:test
+|  \- org.xmlunit:xmlunit-core:jar:2.9.1:test
++- io.rest-assured:rest-assured:jar:4.5.1:test
+|  +- org.codehaus.groovy:groovy:jar:3.0.10:test
+|  +- org.codehaus.groovy:groovy-xml:jar:3.0.10:test
+|  +- org.apache.httpcomponents:httpclient:jar:4.5.13:test
+|  |  +- org.apache.httpcomponents:httpcore:jar:4.4.15:test
+|  |  \- commons-codec:commons-codec:jar:1.15:compile
+|  +- org.apache.httpcomponents:httpmime:jar:4.5.13:test
+|  +- org.ccil.cowan.tagsoup:tagsoup:jar:1.2.1:test
+|  +- io.rest-assured:json-path:jar:4.5.1:test
+|  |  +- org.codehaus.groovy:groovy-json:jar:3.0.10:test
+|  |  \- io.rest-assured:rest-assured-common:jar:4.5.1:test
+|  \- io.rest-assured:xml-path:jar:4.5.1:test
+|     \- org.apache.commons:commons-lang3:jar:3.12.0:compile
+\- org.kie.kogito:kogito-spring-boot-test-utils:jar:1.44.1.Final:test
+   +- org.kie.kogito:kogito-test-utils:jar:1.44.1.Final:test
+   |  +- org.testcontainers:testcontainers:jar:1.17.6:test
+   |  |  +- junit:junit:jar:4.13.2:test
+   |  |  |  \- org.hamcrest:hamcrest-core:jar:1.3:test
+   |  |  +- org.apache.commons:commons-compress:jar:1.22:test
+   |  |  +- org.rnorth.duct-tape:duct-tape:jar:1.0.8:test
+   |  |  |  \- org.jetbrains:annotations:jar:17.0.0:test
+   |  |  +- com.github.docker-java:docker-java-api:jar:3.2.13:test
+   |  |  \- com.github.docker-java:docker-java-transport-zerodep:jar:3.2.13:test
+   |  |     +- com.github.docker-java:docker-java-transport:jar:3.2.13:test
+   |  |     \- net.java.dev.jna:jna:jar:5.8.0:test
+   |  +- org.testcontainers:junit-jupiter:jar:1.17.6:test
+   |  +- org.testcontainers:kafka:jar:1.17.6:test
+   |  +- org.testcontainers:mongodb:jar:1.17.6:test
+   |  +- org.testcontainers:postgresql:jar:1.17.6:test
+   |  +- org.testcontainers:jdbc:jar:1.17.6:test
+   |  +- org.testcontainers:oracle-xe:jar:1.17.6:test
+   |  +- com.oracle.database.jdbc:ojdbc11:jar:21.3.0.0:test
+   |  \- org.testcontainers:database-commons:jar:1.17.6:test
+   \- org.apache.kafka:kafka-clients:jar:3.4.0:compile
+      +- com.github.luben:zstd-jni:jar:1.5.2-1:runtime
+      +- org.lz4:lz4-java:jar:1.8.0:runtime
+      \- org.xerial.snappy:snappy-java:jar:1.1.8.4:runtime
