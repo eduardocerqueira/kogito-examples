@@ -1,0 +1,1 @@
+org.kie.kogito.examples:serverless-workflow-qas-service-showcase:pom:1.0-SNAPSHOT

@@ -1,0 +1,1 @@
+org.kie.kogito.examples:serverless-workflow-loanbroker-showcase:pom:1.0-SNAPSHOT

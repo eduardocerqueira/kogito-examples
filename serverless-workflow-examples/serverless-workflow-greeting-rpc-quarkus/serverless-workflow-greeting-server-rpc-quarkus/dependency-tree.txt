@@ -1,0 +1,30 @@
+org.kie.kogito.examples:serverless-workflow-greeting-server-rpc-quarkus:jar:1.0-SNAPSHOT
++- io.grpc:grpc-netty-shaded:jar:1.51.1:runtime
+|  +- com.google.guava:guava:jar:32.0.1-jre:compile
+|  |  +- com.google.guava:failureaccess:jar:1.0.1:compile
+|  |  +- com.google.guava:listenablefuture:jar:9999.0-empty-to-avoid-conflict-with-guava:compile
+|  |  +- org.checkerframework:checker-qual:jar:3.33.0:compile
+|  |  \- com.google.j2objc:j2objc-annotations:jar:2.8:compile
+|  +- com.google.errorprone:error_prone_annotations:jar:2.14.0:compile
+|  +- io.perfmark:perfmark-api:jar:0.25.0:runtime
+|  \- io.grpc:grpc-core:jar:1.51.1:runtime
+|     +- com.google.code.gson:gson:jar:2.9.0:runtime
+|     +- com.google.android:annotations:jar:4.1.1.4:runtime
+|     \- org.codehaus.mojo:animal-sniffer-annotations:jar:1.21:runtime
++- io.grpc:grpc-protobuf:jar:1.51.1:compile
+|  +- io.grpc:grpc-api:jar:1.51.1:compile
+|  |  \- io.grpc:grpc-context:jar:1.51.1:compile
+|  +- com.google.code.findbugs:jsr305:jar:3.0.2:compile
+|  +- com.google.protobuf:protobuf-java:jar:3.22.0:compile
+|  +- com.google.api.grpc:proto-google-common-protos:jar:2.9.0:compile
+|  \- io.grpc:grpc-protobuf-lite:jar:1.51.1:compile
++- io.grpc:grpc-stub:jar:1.51.1:compile
++- org.apache.tomcat:annotations-api:jar:6.0.53:provided
+\- org.junit.jupiter:junit-jupiter:jar:5.8.1:test
+   +- org.junit.jupiter:junit-jupiter-api:jar:5.9.2:test
+   |  +- org.opentest4j:opentest4j:jar:1.2.0:test
+   |  +- org.junit.platform:junit-platform-commons:jar:1.9.2:test
+   |  \- org.apiguardian:apiguardian-api:jar:1.1.2:test
+   +- org.junit.jupiter:junit-jupiter-params:jar:5.9.2:test
+   \- org.junit.jupiter:junit-jupiter-engine:jar:5.9.2:test
+      \- org.junit.platform:junit-platform-engine:jar:1.9.2:test
